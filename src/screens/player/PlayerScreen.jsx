@@ -42,7 +42,7 @@ function PlayerScreen() {
     setAddSongs(!addSongs);
   };
 
-  // console.log(songName);
+  console.log(songName);
 
   useEffect(() => {
     const audio = new Audio(songs[currentSongIndex]);
@@ -110,11 +110,17 @@ function PlayerScreen() {
               <div className="flex flex-row">
                 <p className="ml-[200px]">Song Name</p>
                 <input
-                  className="ml-[50px] outline-none  w-[694px] mt-[2px] border-2 border-gray-200	rounded-lg "
+                  className="ml-[50px] outline-none  w-[604px] mt-[2px] border-2 border-gray-200	rounded-lg "
                   type="text"
                   placeholder="URL"
                   onChange={(e) => handleAddSong(e.target.value)}
                 />
+                <button
+                  className="BottomMenuText"
+                  onClick={(e) => handleAddSong(e.target.value)}
+                >
+                  Add
+                </button>
               </div>
             )}
 
