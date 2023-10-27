@@ -7,6 +7,12 @@ import StrokeVector from "../../assets/stroke_vector.svg";
 import SongImage from "../../assets/images/song_image.jpeg";
 import YellowPlay from "../../assets/yellow_play.svg";
 import Dustbin from "../../assets/dustbin.svg";
+import leftPlayerLine from "../../assets/left_player_line.svg";
+import rightPlayerLine from "../../assets/right_player_line.svg";
+import eclipse from "../../assets/eclipse.svg";
+import leftSong from "../../assets/leftSong.svg";
+import rightSong from "../../assets/rightSong.svg";
+import playPause from "../../assets/playPause.svg";
 
 function PlayerScreen() {
   return (
@@ -90,6 +96,20 @@ function PlayerScreen() {
             <p className="dateText">17/06/2021</p>
             <img className="yellowPlay" src={YellowPlay}></img>
             <img className="dustbinSvg" src={Dustbin}></img>
+          </div>
+
+          <div className="lowerMostDiv flex flex-row relative">
+            <img className="leftPlayerLine relative" src={leftPlayerLine} />
+            <img className="eclipse absolute" src={eclipse} />
+            <img className="rightPlayerLine" src={rightPlayerLine} />
+          </div>
+
+          <img className="playerSongImage absolute" src={SongImage} />
+          <p className="lower_chaff">Chaff & Dust</p>
+          <div className="flex flex-row">
+            <img className="leftSong" src={leftSong} />
+            <img className="playPause" src={playPause} />
+            <img className="rightSong" src={rightSong} />
           </div>
         </div>
       </div>
