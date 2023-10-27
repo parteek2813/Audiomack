@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Nunito+Sans:wght@200&family=Roboto&display=swap");
+
 .container {
   background-color: #ffffff;
   display: flex;
@@ -38,7 +40,7 @@
   height: 50px;
   position: relative;
   width: 410px;
-  margin-top: 21px;
+  margin-top: 30px;
 }
 
 .container .text-wrapper {
@@ -181,4 +183,24 @@
   text-decoration-line: underline;
   margin-top: 16px;
   margin-left: 134px;
+}
+
+.input_box_css {
+  width: 78.54px;
+  height: 77.209px;
+  flex-shrink: 0;
+  fill: var(--background-white, #fff);
+  stroke-width: 1px;
+  stroke: var(--Tertiary-Color, #d0d3d4);
+  border: 2px solid #d0d3d4;
+  border-radius: 6px;
+  margin-top: 120px;
+  margin-left: 15px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.otp_input_box input:focus {
+  outline: 2px solid blueviolet;
+  border-color: transparent;
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import otp_box from "../../assets/otp_box.svg";
+import "./Style.css";
 
 function OtpVerify() {
   return (
@@ -20,20 +22,32 @@ function OtpVerify() {
               received to verify.
             </p>
 
-            <div className="overlap-wrapper">
-              <div className="overlap">
-                <div className="div">
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                    className="email-address"
-                  />
-
-                  <div className="email-address-2">+91</div>
-                </div>
-              </div>
+            <div className="otp_input_box">
+              <input
+                className="input_box_css"
+                type="text"
+                src={otp_box}
+                maxLength={1}
+                autoFocus
+              ></input>
+              <input
+                className="input_box_css"
+                type="text"
+                src={otp_box}
+                maxLength={1}
+              ></input>
+              <input
+                className="input_box_css"
+                type="text"
+                src={otp_box}
+                maxLength={1}
+              ></input>
+              <input
+                className="input_box_css"
+                type="text"
+                src={otp_box}
+                maxLength={1}
+              ></input>
             </div>
 
             <button className="text-wrapper-2">OTP Verification</button>
