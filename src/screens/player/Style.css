@@ -201,3 +201,50 @@
   font-weight: 400;
   line-height: 22px;
 }
+
+.songNameText {
+  margin-left: 59px;
+  margin-top: 40px;
+  color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.sourceNameText {
+  color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+  margin-top: 40px;
+  margin-left: 294px;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.addedOnNameText {
+  margin-top: 40px;
+  margin-left: 162px;
+  color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.stroke_vector_svg {
+  height: 0px;
+  align-self: stretch;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
