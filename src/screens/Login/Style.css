@@ -1,0 +1,158 @@
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container .group-wrapper {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+.container .group {
+  height: 238px;
+  position: relative;
+  width: 418px;
+  margin-left: 40%;
+  margin-top: 15%;
+}
+
+.container .btn {
+  all: unset;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 188px;
+  width: 412px;
+  cursor: pointer;
+}
+
+.container .overlap-group {
+  background-color: #552583;
+  border-radius: 12px;
+  height: 50px;
+  position: relative;
+  width: 410px;
+  margin-top: 21px;
+}
+
+.container .text-wrapper {
+  color: #ffffff;
+  font-family: "Roboto", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 176px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.container .description {
+  color: #101920;
+  font-family: "Roboto";
+  width: 414px;
+  height: 49px;
+  margin-top: 10px;
+  left: 0;
+  position: absolute;
+  top: 55px;
+}
+
+.container .overlap-wrapper {
+  border: 1px solid;
+  border-color: #d0d3d4;
+  border-radius: 8px;
+  width: 407px;
+  height: 59px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 20px;
+  top: 104px;
+  background: #fff;
+}
+
+.container .overlap {
+  border: 1px solid;
+  border-color: #e4e8f0;
+  border-radius: 2px;
+  height: 59px;
+  position: relative;
+}
+
+.container .div {
+  height: 26px;
+  left: 72px;
+  position: absolute;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .email-address {
+  color: #000000;
+  font-family: "Roboto", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 49px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 88.5%;
+  height: 57px;
+  border: none;
+  outline: none;
+}
+
+.container .email-address-2 {
+  color: var(--textprimary);
+  font-family: "Roboto", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 19px;
+  top: 19px;
+}
+
+.container .india-flag-icon {
+  height: 17px;
+  left: 24px;
+  object-fit: cover;
+  position: absolute;
+  top: 21px;
+  width: 26px;
+}
+
+.container .polygon {
+  height: 5px;
+  left: 55px;
+  position: absolute;
+  top: 27px;
+  width: 6px;
+}
+
+.container .text-wrapper-2 {
+  color: #552583;
+  font-size: 38px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
