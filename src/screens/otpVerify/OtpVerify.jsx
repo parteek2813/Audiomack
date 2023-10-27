@@ -30,26 +30,26 @@ function OtpVerify() {
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={OtpVerify}
+                maxLength={1}
                 autoFocus
               ></input>
               <input
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={OtpVerify}
+                maxLength={1}
               ></input>
               <input
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={OtpVerify}
+                maxLength={1}
               ></input>
               <input
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={OtpVerify}
+                maxLength={1}
               ></input>
             </div>
 
