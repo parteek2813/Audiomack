@@ -388,6 +388,14 @@
   margin-left: 10px;
 }
 
+.playSvg {
+  width: 18.958px;
+  height: 23.887px;
+  flex-shrink: 0;
+  margin-top: -22px;
+  margin-left: 15px;
+}
+
 .rightSong {
   width: 20.833px;
   height: 20.771px;

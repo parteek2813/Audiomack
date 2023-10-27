@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import "./Style.css";
 import SidebarMenuIcon from "../../assets/sidebar_menu_icon.svg";
@@ -14,8 +14,53 @@ import leftSong from "../../assets/leftSong.svg";
 import rightSong from "../../assets/rightSong.svg";
 import playPause from "../../assets/playPause.svg";
 import { Link } from "react-router-dom";
+import playSvg from "../../assets/play_svg.svg";
 
 function PlayerScreen() {
+  const songs = [
+    "http://radio.stereoscenic.com/ama-h",
+    "http://radio.stereoscenic.com/ama-s",
+    "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3",
+    "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg",
+    "http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3",
+  ];
+
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [addSongs, setAddSongs] = useState(false);
+  const [addSongActive, setAddSongActive] = useState(true);
+
+  useEffect(() => {
+    const audio = new Audio(songs[currentSongIndex]);
+    if (isPlaying) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+
+    // Cleanup audio when component unmounts or when the currentSongIndex changes
+    return () => {
+      audio.pause();
+      audio.src = "";
+    };
+  }, [currentSongIndex, isPlaying]);
+
+  const handlePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
+  const playNextSong = () => {
+    const newIndex = (currentSongIndex + 1) % songs.length;
+    setCurrentSongIndex(newIndex);
+    setIsPlaying(true);
+  };
+
+  const playPreviousSong = () => {
+    const newIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+    setCurrentSongIndex(newIndex);
+    setIsPlaying(true);
+  };
   return (
     <>
       <div className="flex flex-row">
@@ -110,9 +155,25 @@ function PlayerScreen() {
           <img className="playerSongImage absolute" src={SongImage} />
           <p className="lower_chaff">Chaff & Dust</p>
           <div className="flex flex-row">
-            <img className="leftSong" src={leftSong} />
-            <img className="playPause" src={playPause} />
-            <img className="rightSong" src={rightSong} />
+            <img
+              className="leftSong"
+              src={leftSong}
+              onClick={playPreviousSong}
+            />
+            {isPlaying ? (
+              <img
+                className="playPause"
+                src={playPause}
+                onClick={handlePlayPause}
+              />
+            ) : (
+              <img
+                className="playSvg "
+                src={playSvg}
+                onClick={handlePlayPause}
+              />
+            )}
+            <img className="rightSong" src={rightSong} onClick={playNextSong} />
           </div>
         </div>
       </div>
