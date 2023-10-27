@@ -1,6 +1,7 @@
 import React from "react";
 import otp_box from "../../assets/otp_box.svg";
 import "./Style.css";
+import { Link } from "react-router-dom";
 
 function OtpVerify() {
   return (
@@ -9,9 +10,11 @@ function OtpVerify() {
         <div className="group-wrapper">
           <div className="group">
             <button className="btn">
-              <div className="overlap-group">
-                <div className="text-wrapper">Verify</div>
-              </div>
+              <Link to="/player">
+                <div className="overlap-group">
+                  <div className="text-wrapper">Verify</div>
+                </div>
+              </Link>
 
               <p className="resend_p">Resend OTP</p>
               <p className="another_p">Use another number</p>
@@ -27,26 +30,26 @@ function OtpVerify() {
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={1}
+                maxLength={OtpVerify}
                 autoFocus
               ></input>
               <input
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={1}
+                maxLength={OtpVerify}
               ></input>
               <input
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={1}
+                maxLength={OtpVerify}
               ></input>
               <input
                 className="input_box_css"
                 type="text"
                 src={otp_box}
-                maxLength={1}
+                maxLength={OtpVerify}
               ></input>
             </div>
 

@@ -32,6 +32,7 @@ function Loginpage() {
                     name="phone"
                     pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     className="email-address"
+                    maxLength={10}
                   />
 
                   <div className="email-address-2">+91</div>

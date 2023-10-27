@@ -5,6 +5,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Loginpage from "./screens/Login/Loginpage.jsx";
 import OtpVerify from "./screens/otpVerify/OtpVerify.jsx";
+import PlayerScreen from "./screens/player/PlayerScreen.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/otp",
     element: <OtpVerify />,
+  },
+  {
+    path: "/player",
+    element: <PlayerScreen />,
   },
 ]);
 
