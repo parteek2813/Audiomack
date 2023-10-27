@@ -15,6 +15,8 @@ import rightSong from "../../assets/rightSong.svg";
 import playPause from "../../assets/playPause.svg";
 import { Link } from "react-router-dom";
 import playSvg from "../../assets/play_svg.svg";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index";
 
 function PlayerScreen() {
   const songs = [
@@ -29,7 +31,18 @@ function PlayerScreen() {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [addSongs, setAddSongs] = useState(false);
-  const [addSongActive, setAddSongActive] = useState(true);
+  const [songName, setSongName] = useState(songs);
+  const [songLink, setSongLink] = useState("");
+  const [songSource, setSongSource] = useState("");
+  const [songImage, setSongImage] = useState("");
+
+  const handleAddSong = (e) => {
+    const { value } = e.target;
+    setSongName([...songs, value]);
+    setAddSongs(!addSongs);
+  };
+
+  // console.log(songName);
 
   useEffect(() => {
     const audio = new Audio(songs[currentSongIndex]);
@@ -93,11 +106,24 @@ function PlayerScreen() {
               <p className="third_text">Current Page</p>
             </div>
 
+            {addSongs && (
+              <div className="flex flex-row">
+                <p className="ml-[200px]">Song Name</p>
+                <input
+                  className="ml-[50px] outline-none  w-[694px] mt-[2px] border-2 border-gray-200	rounded-lg "
+                  type="text"
+                  placeholder="URL"
+                  onChange={(e) => handleAddSong(e.target.value)}
+                />
+              </div>
+            )}
+
             {/* Lower Upper Center Container */}
 
             <div className="LowerLeftCenterContainer">
               <p className="LowerLeftText">Songs</p>
-              <button className="LowerLeftButton">
+
+              <button className="LowerLeftButton" onClick={handleAddSong}>
                 <p className="textAddSongs">Add Songs</p>
               </button>
             </div>
