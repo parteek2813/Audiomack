@@ -248,3 +248,63 @@
   stroke: rgba(0, 0, 0, 0.06);
   border: 1px solid #f0f0f0;
 }
+
+.SongImage {
+  width: 71.999px;
+  height: 71.999px;
+  flex-shrink: 0;
+  margin-left: 23.33px;
+  margin-top: 29px;
+}
+
+.SongNameText {
+  margin-left: 17.67px;
+  margin-top: 58px;
+  margin-bottom: 21px;
+  color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.youtubeNameText {
+  color: rgba(0, 0, 0, 0.85);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 246px;
+  margin-top: 58px;
+}
+
+.dateText {
+  color: rgba(0, 0, 0, 0.85);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 194px;
+  margin-top: 58px;
+}
+
+.yellowPlay {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  fill: #fdb927;
+  margin-top: 49px;
+  margin-left: 144px;
+}
+
+.dustbinSvg {
+  width: 14px;
+  height: 14px;
+  margin-top: 62px;
+  margin-left: 121px;
+}
