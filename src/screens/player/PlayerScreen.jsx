@@ -13,6 +13,7 @@ import eclipse from "../../assets/eclipse.svg";
 import leftSong from "../../assets/leftSong.svg";
 import rightSong from "../../assets/rightSong.svg";
 import playPause from "../../assets/playPause.svg";
+import { Link } from "react-router-dom";
 
 function PlayerScreen() {
   return (
@@ -30,7 +31,9 @@ function PlayerScreen() {
 
           <div className="BottomMenuIcon">
             <img className="BottomMenuIconImg" src={BottomMenuIcon} />
-            <p className="BottomMenuText">Logout</p>
+            <Link to="/">
+              <button className="BottomMenuText">Logout</button>
+            </Link>
           </div>
         </div>
 

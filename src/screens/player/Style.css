@@ -96,6 +96,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  cursor: pointer;
+  background-color: #fdb927;
+  height: 35px;
+  width: 120px;
+  border: 2px solid transparent;
+  border-radius: 10px;
 }
 
 .centerContainer {
