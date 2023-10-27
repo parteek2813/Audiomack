@@ -2,6 +2,7 @@ import React from "react";
 import "./Style.css";
 import india_flag_icon from "../../assets/india_flag_icon.png";
 import polygon from "../../assets/polygon.svg";
+import { Link } from "react-router-dom";
 
 function Loginpage() {
   return (
@@ -9,11 +10,13 @@ function Loginpage() {
       <div className="container">
         <div className="group-wrapper">
           <div className="group">
-            <button className="btn">
-              <div className="overlap-group">
-                <div className="text-wrapper">Sign In</div>
-              </div>
-            </button>
+            <Link to="/otp">
+              <button className="btn">
+                <div className="overlap-group">
+                  <div className="text-wrapper">Sign In</div>
+                </div>
+              </button>
+            </Link>
 
             <p className="description">
               Please enter your mobile number to login. We will send an OTP to
